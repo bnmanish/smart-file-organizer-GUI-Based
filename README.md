@@ -1,6 +1,6 @@
 # Smart File Organizer
 
-A Python script(CLI based) that automatically organizes files in a specified directory by categorizing them into folders based on their file extensions.
+A Python script(GUI based) that automatically organizes files in a specified directory by categorizing them into folders based on their file extensions.
 
 ## Features
 
