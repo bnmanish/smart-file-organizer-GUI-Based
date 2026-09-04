@@ -1,69 +1,60 @@
 # Smart File Organizer
 
-A Python script(GUI based) that automatically organizes files in a specified directory by categorizing them into folders based on their file extensions.
+A Python GUI application that previews and categorizes files in a specified directory based on their file extensions.
 
 ## Features
 
-- **Automatic Categorization**: Organizes files into categories:
+- **GUI Interface**: Built with tkinter for easy folder selection and preview
+- **File Categorization**: Categorizes files into:
   - **PDF** - `.pdf` files
   - **Images** - `.jpg`, `.jpeg`, `.png`, `.gif`, `.webp`
   - **Videos** - `.mp4`, `.mkv`, `.avi`
   - **Documents** - `.doc`, `.docx`, `.txt`
   - **Other** - All other file types
-
-- **Duplicate Handling**: Automatically renames files with duplicate names by appending a number (e.g., `file_1.pdf`, `file_2.pdf`)
-
-- **Statistics Tracking**: Displays a summary showing:
-  - Total files processed
-  - Count per category
-  - Successfully moved files
-  - Failed operations
+- **Folder Browser**: Select any directory using a native file dialog
+- **Preview Mode**: View file counts by category before organizing
+- **Status Feedback**: Real-time status updates
 
 ## Requirements
 
 - Python 3.x
+- tkinter (included with standard Python installation)
 
 ## Usage
 
-1. Run the script:
+1. Run the application:
    ```bash
-   python organizer.py
+   python gui.py
    ```
 
-2. Enter the folder path you want to organize when prompted.
+2. Click "Browse" to select a folder to analyze
 
-3. The script will create category folders in the same directory and move files accordingly.
+3. Click "Preview Files" to see categorized file counts
+
+4. The preview shows:
+   - Total files found
+   - Count per category (PDF, Image, Video, Document, Other)
 
 ## Example Output
 
 ```
-Enter folder path : /home/user/Downloads
-document.pdf ====> moved in ====> PDF
-photo.jpg ====> moved in ====> Image
-video.mp4 ====> moved in ====> Video
-notes.txt ====> moved in ====> Document
-=======================================
-      😀ORGANIZATION COMPLETE😎
-=======================================
-Total Files : 4
-PDF         : 1
-Image       : 1
-Video       : 1
-Document    : 1
-Other       : 0
+Total Files : 15
 
-Successfully moved : 4
-Failed : 0
-=======================================
+PDF        : 3
+Image      : 5
+Video      : 2
+Document   : 4
+Other      : 1
 ```
 
 ## Project Structure
 
 ```
-smart-file-organizer/
-├── organizer.py      # Main organizer script
-├── README.md         # This file
-└── learnings/        # Learning exercises and practice files
+smart-file-organizer-GUI-Based/
+├── gui.py          # Main GUI application
+├── function.py     # File categorization logic
+├── README.md       # This file
+└── AUTHOR.md       # Author information
 ```
 
 ## Author
